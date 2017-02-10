@@ -1,2 +1,2 @@
 # multiple-image-upload
-Multiple image upload with php and get image urls in Mysql separate columns
+Upload multiple images with a single input using html5, php and MySQL.
