@@ -20,7 +20,7 @@ if(isset($_POST['submit'])){
                 $shortname = $_FILES['upload']['name'][$i];
 
                //save the url and the image
-              //  $filePath = "uploaded/" . date('d-m-Y-H-i-s').'-'.$_FILES['upload']['name'][$i];
+              //  $filePath = "uploaded/" . date('d-m-Y-H-i-s').'-'.$_FILES['upload']['name'][$i];  // Use this line to rename images
 
 $filePath = "uploaded/".$_FILES['upload']['name'][$i];
 
@@ -61,7 +61,7 @@ $filePath = "uploaded/".$_FILES['upload']['name'][$i];
 		 }
         echo "</ul>";
 
-		$ins="insert into images(image1,image2,image3) values('$a','$b','$c')"; //Insernt into table "Images"
+		$ins="insert into images(image1,image2,image3) values('$a','$b','$c')"; //Insernt into table "Images" where image1, image2, image3 are column names
 		$ex=$con->query($ins);  
 		
         }
@@ -79,3 +79,5 @@ $filePath = "uploaded/".$_FILES['upload']['name'][$i];
     <p><input type="submit" name="submit" value="Submit"></p>
 
 </form>
+
+<!--  Code written by Madhav -->
